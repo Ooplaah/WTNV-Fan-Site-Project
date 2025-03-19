@@ -1,0 +1,215 @@
+body {
+    background: #270c23;
+    color: rgb(242, 242, 242);
+    background-image: url('/images/nv_transparent_eye_50_percent.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* grid-column-gap: 35px; */
+    grid-row-gap: 35px;
+    padding: 5%;
+}
+
+img {
+    width: 25vw;
+}
+
+.flat {
+    grid-column: 1/4;
+}
+
+.map {
+    /* grid-row: 4/4; */
+    grid-column: 1/4;
+}
+
+.main_img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50vw;
+}
+
+header {
+    padding: 5px;
+    text-align: center;
+    background: rgba(147, 26, 171, 0.349);
+}
+
+nav {
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    justify-content: left;
+    grid-gap: 40px;
+
+}
+
+.logo {
+    height: 60px;
+    width: auto;
+
+}
+
+button {
+    /* min-width: 15px;
+    padding: 20px;
+    border-radius: 50%; */
+
+    height: 6em;
+    width: 6em;
+    margin: auto;
+    background: #9a3a91;
+    /* #692161; */
+    /* #c989d3; */
+    transform: rotate(45deg);
+    border-radius: 95% 0;
+    position: relative;
+}
+
+.intro {
+    grid-column: 1/4;
+    /* grid-area: intro; */
+    text-align: center;
+
+}
+
+h1 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 75vw;
+
+    font-size: 3.5em;
+    color: #fddaf8;
+    text-shadow: 0 0 3px #c849b7, 0 0 7px #f7f7f7, 0 0 10px #f7f7f7;
+    font-family: "Neonderthaw", cursive;
+    font-weight: 590;
+    font-style: normal;
+    animation: blink 2.5s alternate infinite;
+}
+
+@keyframes blink {
+    22% {
+        opacity: 0.2;
+    }
+
+    25% {
+        opacity: 0.5;
+    }
+
+    27% {
+        opacity: 0;
+    }
+
+    35% {
+        opacity: 0.3;
+    }
+}
+
+h2 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 75vw;
+
+    font-size: 2.5em;
+    color: #fddaf8;
+    text-shadow: 0 0 3px #c849b7, 0 0 7px #f7f7f7, 0 0 12px #f7f7f7, 0 0 3px;
+    font-family: "Neonderthaw", cursive;
+    font-weight: 590;
+    font-style: normal;
+    animation: blink 5s linear infinite;
+}
+
+@keyframes blink {
+    40% {
+        opacity: 0.7;
+    }
+}
+
+/* 
+didn't know how to get this to work, but keeping for my future notes
+
+h2:before, h2:after {
+    content: '';
+    position: absolute;
+    text-shadow: 0 0 3px #c849b7, 0 0 7px #f7f7f7, 0 0 10px #f7f7f7, 0 0 3px #c849b7, 0 0 7px #f7f7f7, 0 0 10px #f7f7f7;
+}
+
+h2:before {
+    animation: pulse 2s ease-out infinite;
+}
+
+h2:after {
+    animation: pulse 2s 1s ease-out infinite;
+}
+
+@keyframes pulse {
+    100% {
+        transform: scale(3);
+        opacity: 0;
+    }
+} */
+
+p {
+    font-family: "Architects Daughter", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+
+li {
+    padding: 3px;
+    font-family: "Architects Daughter", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.list {
+    padding: 3%;
+}
+
+/* used for aligning all images besides map */
+.dp {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+a {
+    font-size: 2em;
+    color: #fb98ee;
+    text-shadow: 0 0 3px #c849b7, 0 0 5px #f7f7f7, 0 0 6px #f7f7f7;
+    font-family: "Neonderthaw", cursive;
+    font-weight: 590;
+    font-style: normal;
+}
+
+a:visited {
+    color: #7cf0ff;
+}
+
+a:hover {
+    color: #ebd2e7;
+    text-decoration: underline;
+    transition: 0.1s;
+
+}
+
+footer {
+    grid-column: 1/4;
+    background-color: rgba(147, 26, 171, 0.349);
+    text-align: center;
+    padding: 3%;
+    font-size: 15px;
+    width: 100%
+}
